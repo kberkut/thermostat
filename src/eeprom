@@ -1,0 +1,26 @@
+#include <EEPROM.h>                 // Импортируем бмблиотеку
+#include <Arduino.h>
+
+
+int address = 0;                    // Переменная для хранения адреса
+float value = -14.048f;             // Переменная для хранения значения типа float
+
+void setup() {
+  Serial.begin(9600);
+
+  EEPROM.put(address, value);       // Записать значение value1 в ячейку с адресом 0
+
+  // Для вычисления следующего доступного адреса, необходимо получить объем памяти,
+  // отведенной под предыдущее значение:
+  address += sizeof(float);         // Корректируем адрес на уже записанное значение - 2 байта занимает тип int
+  Serial.println("Addres: " + String(address));
+
+  address = 0;
+  value = 0;
+
+  // Получаем данные из EEPROM
+  // EEPROM.get(address, value);
+  Serial.println(EEPROM.get(address, value));            // Вывести полученное значение float
+}
+
+void loop() {}

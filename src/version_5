@@ -1,0 +1,254 @@
+// Термостат для поддержания температуры в сушке
+// v.5
+// Рабочая нестабильная прошивка
+// Управление двумя контактами цепи управления магнитного пускателя
+// Обычное двухпозиционное регулирование без гистерезиса
+// Желательно доделать что бы реле срабатывали однократно например на 2 секунды. Тогда после отлючения МП они не будут потреблять ток.
+
+#define CLK 2
+#define DT 3
+#define SW 4
+#define KM1NC_PIN 10 // пин реле для включения цепи магнитного пускателя вентилятора отопления
+#define KM1NO_PIN 11 // пин реле для отключения цепи пускателя вентилятора отопления
+#define DS_PIN 12
+#define HL_PIN 13 // Индикация работы в автоматическом режиме
+
+#include <Arduino.h>
+#include <LCD_1602_RUS.h>
+LCD_1602_RUS lcd(0x27, 16, 2);
+
+#include <GyverEncoder.h>
+Encoder enc1(CLK, DT, SW, TYPE2);
+
+#include <microDS18B20.h>
+MicroDS18B20 sensor1(DS_PIN);
+
+bool flagAuto = 0, flagSecondMenu = 0, flagSwitchMenu = 0, flagMode = 0, flagMainMenuRedraw = 1, flagSecondMenuRedraw = 0,
+     flagArrow = 0, flagScroll = 0, flagArrowHold = 0, flagScrollHold = 0;
+
+float tempHigh = 30, tempLow = 27, getTemp;
+String arrow = "\xB7E";
+uint32_t timerRedraw, timerRequestTemp, timerGetTemp;
+
+void setup()
+{
+  enc1.setType(TYPE2);
+  lcd.init();
+  lcd.backlight();
+  pinMode(HL_PIN, OUTPUT);
+  pinMode(KM1NO_PIN, OUTPUT);
+  pinMode(KM1NC_PIN, OUTPUT);
+  sensor1.setResolution(9);
+}
+
+void requestTemp()
+{
+  if (millis() - timerRequestTemp >= 2000)
+  {                              // ищем разницу в мс
+    timerRequestTemp = millis(); // сброс таймера
+    sensor1.requestTemp();       // выполнить действие
+  }
+}
+
+void readTemp()
+{
+  getTemp = sensor1.getTemp();
+  if (flagAuto == 1)
+  {
+    if (getTemp < tempLow)
+    {
+      digitalWrite(KM1NO_PIN, HIGH);
+    }
+    if (getTemp >= tempLow)
+    {
+      digitalWrite(KM1NO_PIN, LOW);
+    }
+    if (getTemp < tempHigh)
+    {
+      digitalWrite(KM1NC_PIN, LOW);
+    }
+    if (getTemp >= tempHigh)
+    {
+      digitalWrite(KM1NC_PIN, HIGH);
+    }
+  }
+  if (flagAuto == 0)
+  {
+    digitalWrite(KM1NO_PIN, LOW);
+    digitalWrite(KM1NC_PIN, LOW);
+  }
+}
+
+void mainMenuRedraw()
+{
+  if (millis() - timerRedraw >= 1000)
+  {                         // ищем разницу в мс
+    timerRedraw = millis(); // сброс таймера
+    flagMainMenuRedraw = 1;
+  }
+}
+
+void lcdInit()
+{
+  delay(10);
+  lcd.clear();
+  lcd.setCursor(0, 0);
+}
+
+void mainMenuEnc()
+{
+  if (enc1.isRelease() && flagSecondMenu == 0) // Однокраное нажание. Переключение режима работы с ручного на автоматический.
+  {
+    flagMode = 1;
+  }
+  if (enc1.isHolded()) // Удержание. Переключение между меню.
+  {
+    flagSwitchMenu = 1;
+  }
+  if (enc1.isRight() && flagSecondMenu == 1) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
+  {
+    flagArrow = 1;
+    flagSecondMenuRedraw = 1;
+  }
+  if (enc1.isLeft() && flagSecondMenu == 1) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
+  {
+    flagArrow = 1;
+    flagSecondMenuRedraw = 1;
+  }
+  if (enc1.isRightH() && flagSecondMenu == 1) // Удержание кнопки с вращением ручки енкодера. Изменение переменной.
+  {
+    flagArrowHold = 1;
+    flagSecondMenuRedraw = 1;
+    if (flagScroll == 1)
+    {
+      tempHigh++;
+    }
+    else
+    {
+      tempLow++;
+    }
+  }
+  if (enc1.isLeftH() && flagSecondMenu == 1) // Удержание кнопки с вращением ручки енкодера. Изменение переменной.
+  {
+    flagArrowHold = 1;
+    flagSecondMenuRedraw = 1;
+    if (flagScroll == 1)
+    {
+      tempHigh--;
+    }
+    else
+    {
+      tempLow--;
+    }
+  }
+}
+
+void mainMenuLcd()
+{
+  if (flagSecondMenu == 0)
+  {
+    if (flagMode == 1)
+    {
+      flagAuto = !flagAuto;
+      flagMode = 0;
+    }
+    if (flagMainMenuRedraw == 1)
+    {
+      lcdInit();
+      lcd.print(L"t=");
+      lcd.setCursor(2, 0);
+      lcd.print(getTemp);
+      lcd.setCursor(6, 0);
+      lcd.print(L"\xBDF");
+      lcd.setCursor(7, 0);
+      lcd.print(L"C");
+      lcd.setCursor(0, 1);
+      if (flagAuto == 0)
+      {
+        lcd.print(L"Ручной");
+        digitalWrite(HL_PIN, LOW);
+      }
+      else
+      {
+        lcd.print(L"Автоматический");
+        digitalWrite(HL_PIN, HIGH);
+      }
+      flagMainMenuRedraw = 0;
+    }
+  }
+}
+
+void switchMenuEnc()
+{
+  if (flagSwitchMenu == 1 && flagSecondMenu == 0)
+  {
+    flagSwitchMenu = !flagSwitchMenu;
+    flagSecondMenu = 1;
+    flagSecondMenuRedraw = 1;
+    flagArrow = 1;
+  }
+  if (flagSwitchMenu == 1 && flagSecondMenu == 1)
+  {
+    flagSwitchMenu = !flagSwitchMenu;
+    flagSecondMenu = 0;
+  }
+}
+
+void secondMenuLcd()
+{
+  if (flagSecondMenu == 1 && flagSecondMenuRedraw == 1)
+  {
+    flagSecondMenuRedraw = 0;
+    lcdInit();
+    if (flagArrow == 1 && flagScroll == 0)
+    {
+      lcd.print(arrow);
+      if (flagArrowHold == 0)
+      {
+        flagArrow = !flagArrow;
+      }
+    }
+    lcd.setCursor(2, 0);
+    lcd.print(L"Верх.t");
+    lcd.setCursor(9, 0);
+    lcd.print(tempHigh);
+    lcd.setCursor(11, 0);
+    lcd.print(L"\xBDF");
+    lcd.setCursor(12, 0);
+    lcd.print(L"C");
+    lcd.setCursor(0, 1);
+    if (flagArrow == 1 && flagScroll == 1)
+    {
+      lcd.print(arrow);
+      if (flagArrowHold == 0)
+      {
+        flagArrow = !flagArrow;
+      }
+    }
+    lcd.setCursor(2, 1);
+    lcd.print(L"Нижн.t");
+    lcd.setCursor(9, 1);
+    lcd.print(tempLow);
+    lcd.setCursor(11, 1);
+    lcd.print(L"\xBDF");
+    lcd.setCursor(12, 1);
+    lcd.print(L"C");
+    if (flagArrowHold == 0)
+    {
+      flagScroll = !flagScroll;
+    }
+    flagArrowHold = 0;
+  }
+}
+
+void loop()
+{
+  enc1.tick();
+  mainMenuRedraw();
+  mainMenuEnc();
+  mainMenuLcd();
+  switchMenuEnc();
+  secondMenuLcd();
+  requestTemp();
+  readTemp();
+}

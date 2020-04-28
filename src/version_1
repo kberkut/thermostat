@@ -1,0 +1,122 @@
+// Термостат для поддержания температуры в сушке
+// http://robotosha.ru/arduino/multi-tasking-arduino.html
+#define CLK 2
+#define DT 3
+#define SW 4
+
+#include <Arduino.h>
+#include <LCD_1602_RUS.h>
+LCD_1602_RUS lcd(0x27, 16, 2);
+
+#include <GyverEncoder.h>
+Encoder enc1(CLK, DT, SW, TYPE2);
+
+int counter;
+
+void setup() {
+enc1.setType(TYPE2);
+lcd.init();                      
+lcd.backlight();
+}
+
+void lcdInit () {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+}
+
+void encoderFunc () {
+  if (enc1.isRight()) {  
+  counter = 1;
+  }  
+if (enc1.isLeft()) {
+  counter = 2;
+  }
+if (enc1.isHolded()) {  
+  counter = 3;
+  }
+  if (enc1.isPress()) {  
+  counter = 4;
+  }
+}
+
+/* void menuGlobal () {
+  switch (counter)
+  {
+  case 1:
+    lcdInit ();
+    lcd.print(L"Вправо");
+    counter = 0;
+    break;
+  case 2:
+    lcdInit ();
+  lcd.print(L"Влево");
+  counter = 0;
+      case 3:
+    lcdInit ();
+  lcd.print(L"Удержание");
+  counter = 0;
+    break;
+  case 4:
+    lcdInit ();
+  lcd.print(L"Нажатие");
+  counter = 0;
+    break;
+  default:  lcdInit ();
+  lcd.print(L"Нихрена не работает");
+    break;
+  }
+} */
+
+void menuGlobal () {
+  if (counter == 1) {  
+      lcdInit ();
+    lcd.print(L"Вправо");
+  counter = 0;
+  }  
+  if (counter == 2) {  
+      lcdInit ();
+    lcd.print(L"Влево");
+   counter = 0;
+   }
+    if (counter == 3) {  
+      lcdInit ();
+    lcd.print(L"Удержание");
+   counter = 0;
+   }
+    if (counter == 4) {  
+      lcdInit ();
+    lcd.print(L"Нажатие");
+   counter = 0;
+   }
+}
+
+/* void menuGlobal2 () {
+ if (enc1.isRight()) {  
+  lcdInit ();
+    lcd.print(L"Вправо");
+  }  
+if (enc1.isLeft()) {
+  lcdInit ();
+    lcd.print(L"Влево");
+  }
+if (enc1.isHolded()) {  
+  lcdInit ();
+    lcd.print(L"Удержание");
+  }
+  if (enc1.isDouble()) {  
+  lcdInit ();
+    lcd.print(L"Двойной клик");
+  }
+  if (enc1.isClick()) {  
+  lcdInit ();
+    lcd.print(L"Нажатие");
+  }
+  } */
+
+
+void loop() {
+enc1.tick();
+encoderFunc ();
+menuGlobal ();
+ 
+} 

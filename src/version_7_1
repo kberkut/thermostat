@@ -1,0 +1,309 @@
+// Термостат для поддержания температуры в сушке
+// v.7.1
+// Обновлено меню
+// Рабочая стабильная прошивка
+// Управление двумя контактами цепи управления магнитного пускателя
+// Удалено: Обычное двухпозиционное регулирование без гистерезиса
+// Переделано на 1 контакт с регулированием с гистерезисом
+// Сделано запоминание состояния автоматического режима и установок температуры при выключении питания
+// Если включен автоматический режим, то ручной выключен. Схема ручного управления полностью шунтирована.
+// Сделать управление вентилятором, нужно новое меню.
+//
+// Коды символов диспреля 1602 http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/pytayus-sodat-menyu#comment-531165
+
+#define CLK 2
+#define DT 3
+#define SW 4
+// #define KM1NC_PIN 10 // пин реле для включения цепи магнитного пускателя вентилятора отопления
+#define KM1NO_PIN 11 // пин реле для включения цепи пускателя вентилятора отопления
+#define DS_PIN 12
+#define HL_PIN 13 // Индикация работы в автоматическом режиме
+
+#include <Arduino.h>
+#include <LCD_1602_RUS.h>
+LCD_1602_RUS lcd(0x27, 16, 2); // 27 //3F
+
+#include <GyverEncoder.h>
+Encoder enc1(CLK, DT, SW, TYPE2);
+
+#include <microDS18B20.h>
+MicroDS18B20 sensor1(DS_PIN);
+
+#include <GyverRelay.h>
+GyverRelay regulator1(REVERSE);
+
+#include "EEPROM.h"
+
+bool flagAuto = 0, flagSecondMenu = 0, flagSwitchMenu = 0, flagMode = 0, flagMainMenuRedraw = 1, flagSecondMenuRedraw = 0,
+     flagArrow = 0, flagScroll = 0, flagArrowHold = 0, flagScrollHold = 0,
+     flagKM1NO = 0; // Флаги для реле. 1 - соотв. подаче питания на катушку реле.
+
+float tempHigh = 30, getTemp, hysteresis = 4;
+String arrow = "\xB7E";
+uint32_t timerRedraw, timerRequestTemp, timerGetTemp;
+
+int addressTempHigh = 5, // разносим адреса через десятки, а то глючит.
+    addressHysteresis = 15,
+    addressFlagAuto = 25;
+
+void setup()
+{
+  enc1.setType(TYPE2);
+  lcd.init();
+  lcd.backlight();
+  pinMode(HL_PIN, OUTPUT);
+  pinMode(KM1NO_PIN, OUTPUT);
+  sensor1.setResolution(9);
+  regulator1.setpoint = tempHigh;     // установка (ставим на 40 градусов)
+  regulator1.hysteresis = hysteresis; // ширина гистерезиса
+  regulator1.k = 0.5;
+  EEPROM.get(addressFlagAuto, flagAuto);
+  delay(10);
+  EEPROM.get(addressTempHigh, tempHigh);
+  delay(10);
+  EEPROM.get(addressHysteresis, hysteresis);
+  delay(10);
+  if (flagAuto != flagAuto)
+  {
+    EEPROM.put(addressFlagAuto, (bool)0);
+    delay(10);
+  }
+  if (tempHigh != tempHigh)
+  {
+    EEPROM.put(addressTempHigh, (float)30);
+    delay(10);
+  }
+  if (hysteresis != hysteresis)
+  {
+    EEPROM.put(addressHysteresis, (float)5);
+    delay(10);
+  }
+  // Serial.begin(9600); // инициализируем порт, скорость 9600
+}
+
+void requestTemp()
+{
+  if (millis() - timerRequestTemp >= 2000)
+  {                              // ищем разницу в мс
+    timerRequestTemp = millis(); // сброс таймера
+    sensor1.requestTemp();       // выполнить действие
+  }
+}
+
+void writeKM1NO_PIN() // Для двухпозиционного релейного регулирования с обратной связью
+{
+  regulator1.input = getTemp = sensor1.getTemp(); // сообщаем регулятору текущую температуру
+  if (flagAuto == 1)
+  {
+    digitalWrite(KM1NO_PIN, regulator1.getResultTimer()); // На замыкание котактов. Если низкая то греем.
+  }
+  if (flagAuto == 0)
+  {
+    digitalWrite(KM1NO_PIN, LOW);
+  }
+}
+
+void mainMenuRedraw()
+{
+  if (millis() - timerRedraw >= 1000)
+  {                         // ищем разницу в мс
+    timerRedraw = millis(); // сброс таймера
+    flagMainMenuRedraw = 1;
+  }
+}
+
+void lcdInit()
+{
+  delay(10);
+  lcd.clear();
+  lcd.setCursor(0, 0);
+}
+
+void mainMenuEnc()
+{
+  if (enc1.isRelease() && flagSecondMenu == 0) // Однокраное нажание. Переключение режима работы с ручного на автоматический.
+  {
+    flagMode = 1;
+  }
+  if (enc1.isHolded()) // Удержание. Переключение между меню.
+  {
+    flagSwitchMenu = 1;
+  }
+  if (enc1.isRight() && flagSecondMenu == 1) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
+  {
+    flagArrow = 1;
+    flagSecondMenuRedraw = 1;
+  }
+  if (enc1.isLeft() && flagSecondMenu == 1) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
+  {
+    flagArrow = 1;
+    flagSecondMenuRedraw = 1;
+  }
+  if (enc1.isRightH() && flagSecondMenu == 1) // Удержание кнопки с вращением ручки енкодера. Изменение переменной.
+  {
+    flagArrowHold = 1;
+    flagSecondMenuRedraw = 1;
+    if (flagScroll == 1)
+    {
+      tempHigh++;
+      regulator1.setpoint = tempHigh;
+    }
+    else
+    {
+      hysteresis++;
+      regulator1.hysteresis = hysteresis;
+    }
+  }
+  if (enc1.isLeftH() && flagSecondMenu == 1) // Удержание кнопки с вращением ручки енкодера. Изменение переменной.
+  {
+    flagArrowHold = 1;
+    flagSecondMenuRedraw = 1;
+    if (flagScroll == 1)
+    {
+      tempHigh--;
+      regulator1.setpoint = tempHigh;
+    }
+    else
+    {
+      hysteresis--;
+      regulator1.hysteresis = hysteresis;
+    }
+  }
+}
+
+void mainMenuLcd()
+{
+  if (flagSecondMenu == 0)
+  {
+    if (flagMode == 1)
+    {
+      flagAuto = !flagAuto;
+      EEPROM.put(addressFlagAuto, flagAuto);
+      delay(10);
+
+      flagMode = 0;
+    }
+    if (flagMainMenuRedraw == 1)
+    {
+      lcdInit();
+      lcd.print(L"t=");
+      lcd.setCursor(2, 0);
+      lcd.print(getTemp);
+      lcd.setCursor(6, 0);
+      lcd.print(L"\xBDF");
+      lcd.setCursor(7, 0);
+      lcd.print(L"C");
+      lcd.setCursor(9, 0);
+      lcd.print(tempHigh);
+      lcd.setCursor(14, 0);
+      lcd.print(L"\xBDF");
+      lcd.setCursor(15, 0);
+      lcd.print(L"C");
+      lcd.setCursor(0, 1);
+      if (flagAuto == 0)
+      {
+        lcd.print(L"Ручной");
+        digitalWrite(HL_PIN, LOW);
+      }
+      else
+      {
+        lcd.print(L"Автомат.");
+        digitalWrite(HL_PIN, HIGH);
+      }
+      lcd.setCursor(9, 1);
+      lcd.print(hysteresis);
+      lcd.setCursor(14, 1);
+      lcd.print(L"\xBDF");
+      lcd.setCursor(15, 1);
+      lcd.print(L"C");
+      flagMainMenuRedraw = 0;
+    }
+  }
+}
+
+void switchMenuEnc()
+{
+  if (flagSwitchMenu == 1 && flagSecondMenu == 0)
+  {
+    flagSwitchMenu = !flagSwitchMenu;
+    flagSecondMenu = 1;
+    flagSecondMenuRedraw = 1;
+    flagArrow = 1;
+  }
+  if (flagSwitchMenu == 1 && flagSecondMenu == 1)
+  {
+    flagSwitchMenu = !flagSwitchMenu;
+    flagSecondMenu = 0;
+
+    EEPROM.put(addressHysteresis, hysteresis);
+    delay(10);
+
+    EEPROM.put(addressTempHigh, tempHigh);
+    delay(10);
+  }
+}
+
+void secondMenuLcd()
+{
+  if (flagSecondMenu == 1 && flagSecondMenuRedraw == 1)
+  {
+    flagSecondMenuRedraw = 0;
+    lcdInit();
+    if (flagArrow == 1 && flagScroll == 0)
+    {
+      lcd.print(arrow);
+      if (flagArrowHold == 0)
+      {
+        flagArrow = !flagArrow;
+      }
+    }
+    lcd.setCursor(1, 0);
+    lcd.print(L"t=");
+    lcd.setCursor(3, 0);
+    lcd.print(tempHigh);
+    lcd.setCursor(7, 0);
+    lcd.print(L"\xBDF");
+    lcd.setCursor(8, 0);
+    lcd.print(L"C");
+    lcd.setCursor(0, 1);
+    if (flagArrow == 1 && flagScroll == 1)
+    {
+      lcd.print(arrow);
+      if (flagArrowHold == 0)
+      {
+        flagArrow = !flagArrow;
+      }
+    }
+    lcd.setCursor(1, 1);
+    lcd.print(L"\xBE0");
+    lcd.setCursor(2, 1);
+    lcd.print(L"=");
+    lcd.setCursor(3, 1);
+    lcd.print(hysteresis);
+    lcd.setCursor(7, 1);
+    lcd.print(L"\xBDF");
+    lcd.setCursor(8, 1);
+    lcd.print(L"C");
+    if (flagArrowHold == 0)
+    {
+      flagScroll = !flagScroll;
+    }
+    flagArrowHold = 0;
+  }
+}
+
+void loop()
+{
+  enc1.tick();
+  mainMenuRedraw();
+  mainMenuEnc();
+  mainMenuLcd();
+  switchMenuEnc();
+  secondMenuLcd();
+  requestTemp();
+  writeKM1NO_PIN();
+  /* Serial.println("\nhysteresis=");
+  Serial.print(EEPROM.get(addressHysteresis, hysteresis));
+  Serial.println("\ntempHigh=");
+  Serial.print(EEPROM.get(addressTempHigh, tempHigh)); */
+}

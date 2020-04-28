@@ -1,0 +1,59 @@
+
+// Автоматическое восстановление питания - AutoRecoverySupply
+// v1
+// Включение электродвигателя после восстановления питания.
+// Контроль причины отключения. Елси отключение было вызвано срабатыванием теплового реле, то АПВ выводится из работы, до восстановления работоспособности схемы.
+// Если была ручная остановка электродвигаетля, то АВП не должно реагировать.
+// Фиксация успешного восстановления питания
+
+// == Первый канал
+#define START1 1 // Кнопка запуска схемы и включения автоматического режима. Ручное управление отключается!!!
+#define KM1 4 // Реле для запуска схемы
+#define UKK1 2 // Контроль напряжения между контактами теплового реле
+#define UIKM1 3 // Контроль тока в цепи или напряжения на катушке магнитного пускателя
+#define AUTO1 5 // Индикация включения АВП.
+#define ERR1 6 // Индикация аварии и запрет на работу АВП.
+#define RESET1 7 // Сброс запрета работы АВП.
+
+#include <Arduino.h>
+
+GButton start1(START1, HIGH_PULL, NORM_OPEN);
+
+bool flagOn, flagOnKM1, flagError;
+
+void setup() {
+pinMode(START1, INPUT);
+pinMode(UKK1, INPUT);
+pinMode(KM1, OUTPUT);
+pinMode(UIKM1, INPUT);
+pinMode(AUTO1, OUTPUT);
+pinMode(ERR1, OUTPUT);
+pinMode(RESET1, OUTPUT);
+start1.setTimeout(5000);
+}
+
+void button(){
+if (start1.isClick()) {
+    flagOn = !flagOn;
+    if(flagOn == 0) {
+      flagOnKM1 = false;
+    }
+}
+if (start1.isHolded()) {
+    flagError = false;
+}
+}
+
+if (flagOn == true && flagOnKM1 == false && flagError == false) {
+  digitalWrite(KM1, HIGH);
+  flagOnKM1 = true;
+}
+
+if (digitalRead(UKK1) == 1 && digitalRead(UIKM1) == 1){
+  flagError = true;
+  flagOnKM1 = false;
+}
+
+void loop() {
+
+}

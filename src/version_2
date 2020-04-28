@@ -1,0 +1,167 @@
+// Термостат для поддержания температуры в сушке
+#define CLK 2
+#define DT 3
+#define SW 4
+
+#include <Arduino.h>
+#include <LCD_1602_RUS.h>
+LCD_1602_RUS lcd(0x27, 16, 2);
+
+#include <GyverEncoder.h>
+Encoder enc1(CLK, DT, SW, TYPE2);
+
+bool flagClickMainMenu = 1,
+     flagAuto = 0, flagManual = 1,
+     flagHoldedMainMenu = 0,
+     flagIsLocatedInSecondMenu = 0, flagIsStateSecondMenu = 0,
+     flagUp = 1, flagDown = 0, flagStateUp = 1, flagStateDown = 0;
+
+int8_t countH = 30, countL = 25;
+
+void setup()
+{
+  enc1.setType(TYPE2);
+  lcd.init();
+  lcd.backlight();
+}
+
+void lcdInit()
+{
+  lcd.clear();
+  lcd.setCursor(0, 0);
+}
+
+void mainMenuEnc()
+{
+  if (enc1.isHolded())
+  {
+    flagHoldedMainMenu = 1;
+  }
+  if (enc1.isClick() && flagIsLocatedInSecondMenu == 0)
+  {
+    flagClickMainMenu = 1;
+    if (flagAuto == 0)
+    {
+      flagManual = 0;
+    }
+    if (flagAuto == 1)
+    {
+      flagManual = 1;
+    }
+  }
+  if (enc1.isRight() && flagIsLocatedInSecondMenu == 1)
+  {
+    flagUp = 1;
+    flagDown = 0;
+    flagIsStateSecondMenu = 0;
+  }
+  if (enc1.isLeft() && flagIsLocatedInSecondMenu == 1)
+  {
+    flagUp = 0;
+    flagDown = 1;
+    flagIsStateSecondMenu = 0;
+  }
+  if (enc1.isRightH() && flagIsLocatedInSecondMenu == 1)
+  {
+    if (flagUp == 1)
+    {
+      countH++;
+    }
+    if (flagDown == 1)
+    {
+      countL++;
+    }
+  }
+  if (enc1.isLeftH() && flagIsLocatedInSecondMenu == 1)
+  {
+    if (flagUp == 1)
+    {
+      countH--;
+    }
+    if (flagDown == 1)
+    {
+      countL--;
+    }
+  }
+}
+
+void mainMenuLcd()
+{
+  if (flagClickMainMenu == 1 && flagManual == 1)
+  {
+    lcdInit();
+    lcd.print(L"Температура");
+    lcd.setCursor(0, 1);
+    lcd.print(L"Ручной");
+    flagClickMainMenu = 0;
+    flagAuto = 0;
+  }
+  if (flagClickMainMenu == 1 && flagManual == 0)
+  {
+    lcdInit();
+    lcd.print(L"Температура");
+    lcd.setCursor(0, 1);
+    lcd.print(L"Автоматический");
+    flagClickMainMenu = 0;
+    flagAuto = 1;
+  }
+}
+
+void secondMenuEnc()
+{
+  if (flagHoldedMainMenu == 1 && flagIsLocatedInSecondMenu == 0)
+  {
+    flagIsLocatedInSecondMenu = 1;
+    flagHoldedMainMenu = 0;
+  }
+  if (flagHoldedMainMenu == 1 && flagIsLocatedInSecondMenu == 1)
+  {
+    flagIsLocatedInSecondMenu = 0;
+    flagIsStateSecondMenu = 0;
+    flagHoldedMainMenu = 0;
+    flagClickMainMenu = 1;
+  }
+}
+
+void secondMenuLcd()
+{
+  if (flagIsLocatedInSecondMenu == 1)
+  {
+    if (flagUp == 1 && flagIsStateSecondMenu == 0)
+    {
+      lcdInit();
+      lcd.print(">>Верх");
+      lcd.setCursor(9, 0);
+      lcd.print(countH);
+      lcd.setCursor(0, 1);
+      lcd.print("  Низ");
+      lcd.setCursor(9, 1);
+      lcd.print(countL);
+      flagIsStateSecondMenu = 1;
+    }
+    if (flagDown == 1 && flagIsStateSecondMenu == 0)
+    {
+      lcdInit();
+      lcd.print("  Верх");
+      lcd.setCursor(9, 0);
+      lcd.print(countH);
+      lcd.setCursor(0, 1);
+      lcd.print(">>Низ");
+      lcd.setCursor(9, 1);
+      lcd.print(countL);
+      flagIsStateSecondMenu = 1;
+    }
+  }
+}
+
+
+
+
+void loop()
+{
+  enc1.tick();
+  mainMenuEnc();
+  secondMenuEnc();
+  mainMenuLcd();
+  secondMenuLcd();
+}

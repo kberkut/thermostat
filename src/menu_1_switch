@@ -1,0 +1,116 @@
+#define CLK 2
+#define DT 3
+#define SW 4
+
+#include <Arduino.h>
+#include <LCD_1602_RUS.h>
+LCD_1602_RUS lcd(0x27, 16, 2); // 27 //3F
+
+#include <GyverEncoder.h>
+Encoder enc1(CLK, DT, SW, TYPE2);
+
+int choseMenu = 0, timerRedraw;
+bool flagMenuRedraw = 0;
+
+void setup()
+{
+  enc1.setType(TYPE2);
+  lcd.init();
+  lcd.backlight();
+}
+void lcdInit()
+{
+  delay(10);
+  lcd.clear();
+  lcd.setCursor(0, 0);
+}
+
+void menu1()
+{
+  lcdInit();
+  lcd.print(L"11111111");
+  lcd.setCursor(0, 1);
+  lcd.print(choseMenu);
+}
+
+void menu2()
+{
+  lcdInit();
+  lcd.print(L"22222222");
+  lcd.setCursor(0, 1);
+  lcd.print(choseMenu);
+}
+
+void menu3()
+{
+  lcdInit();
+  lcd.print(L"33333333");
+  lcd.setCursor(0, 1);
+  lcd.print(choseMenu);
+}
+
+void error()
+{
+  lcdInit();
+  lcd.print(L"error");
+}
+
+void encoder()
+{
+  if (enc1.isRight()) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
+  {
+    choseMenu++;
+    if (choseMenu >= 3)
+    {
+      choseMenu = 0;
+    }
+  }
+  if (enc1.isLeft()) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
+  {
+    choseMenu++;
+    if (choseMenu >= 3)
+    {
+      choseMenu = 0;
+    }
+  }
+}
+
+void menu()
+{
+  switch (choseMenu)
+  {
+  case 0:
+    menu1();
+    break;
+  case 1:
+    menu2();
+    break;
+  case 2:
+    menu3();
+    break;
+  default:
+    error();
+    break;
+  }
+}
+
+void menuRedraw()
+{
+  if (millis() - timerRedraw >= 500)
+  {                         // ищем разницу в мс
+    timerRedraw = millis(); // сброс таймера
+    flagMenuRedraw = 1;
+  }
+}
+
+void loop()
+{
+  enc1.tick();
+  encoder();
+  if (flagMenuRedraw == 1)
+  {
+    menu();
+    flagMenuRedraw = 0;
+  }
+  menuRedraw();
+}
