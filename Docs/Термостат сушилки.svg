@@ -769,20 +769,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.79802049"
-     inkscape:cx="603.04687"
-     inkscape:cy="503.50449"
+     inkscape:zoom="0.5642857"
+     inkscape:cx="541.23774"
+     inkscape:cy="510.88039"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1914"
-     inkscape:window-height="992"
+     inkscape:window-height="1022"
      inkscape:window-x="0"
      inkscape:window-y="55"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:snap-global="true">
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid2080"
@@ -798,7 +800,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -810,728 +812,6 @@
     <g
        id="g2803"
        transform="translate(94.233817,28.38834)" />
-    <g
-       id="g1153"
-       transform="translate(260.71483,-182.71923)">
-      <g
-         style="stroke-width:1.49206352"
-         transform="matrix(0.67021276,0,0,0.67021276,0.28469748,17.143074)"
-         id="g859">
-        <rect
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44761908;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect815"
-           width="72.911125"
-           height="22.037447"
-           x="21.803005"
-           y="27.627373" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           x="23.561312"
-           y="46.265427"
-           id="text823"><tspan
-             sodipodi:role="line"
-             id="tspan821"
-             x="23.561312"
-             y="46.265427"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">Автомат.</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           x="67.488579"
-           y="36.536129"
-           id="text827"><tspan
-             sodipodi:role="line"
-             id="tspan825"
-             x="67.488579"
-             y="36.536129"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-             dy="0 0 0 0 -3 3">30.0<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-   id="tspan833">о</tspan>С</tspan></text>
-        <text
-           id="text839"
-           y="46.265427"
-           x="67.401764"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           xml:space="preserve"><tspan
-             dy="0 0 0 0 -3 3"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-             y="46.265427"
-             x="67.401764"
-             id="tspan837"
-             sodipodi:role="line">5.00<tspan
-   id="tspan835"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">о</tspan>С</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           x="23.561312"
-           y="36.536129"
-           id="text845"><tspan
-             sodipodi:role="line"
-             id="tspan843"
-             x="23.561312"
-             y="36.536129"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-             dy="0 0 0 0 0 0 -3 3">t=24.0<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-   id="tspan841">о</tspan>С</tspan></text>
-      </g>
-      <g
-         style="stroke-width:1.49519229"
-         transform="matrix(0.66881027,0,0,0.66881027,65.820493,25.608083)"
-         id="g908">
-        <rect
-           y="15.02849"
-           x="122.26251"
-           height="22.037447"
-           width="72.911125"
-           id="rect861"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44855773;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        <text
-           id="text865"
-           y="33.666542"
-           x="124.02082"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294"
-             y="33.666542"
-             x="124.02082"
-             id="tspan863"
-             sodipodi:role="line">Выкл.</tspan></text>
-        <text
-           id="text871"
-           y="23.937246"
-           x="164.21815"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294"
-             y="23.937246"
-             x="164.21815"
-             id="tspan869"
-             sodipodi:role="line">Тр=0.1ч</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
-           x="164.13133"
-           y="33.666542"
-           id="text877"><tspan
-             sodipodi:role="line"
-             id="tspan875"
-             x="164.13133"
-             y="33.666542"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294">Тп=0.1ч</tspan></text>
-        <text
-           id="text883"
-           y="23.937246"
-           x="124.02082"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294"
-             y="23.937246"
-             x="124.02082"
-             id="tspan881"
-             sodipodi:role="line">Oxygen</tspan></text>
-      </g>
-      <g
-         style="stroke-width:1.49206352"
-         id="g2977"
-         transform="matrix(0.67021276,0,0,0.67021276,0.28469748,55.139166)">
-        <rect
-           y="27.627373"
-           x="21.803005"
-           height="22.037447"
-           width="72.911125"
-           id="rect2953"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44761908;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        <text
-           id="text2957"
-           y="46.265427"
-           x="23.561312"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-             y="46.265427"
-             x="23.561312"
-             id="tspan2955"
-             sodipodi:role="line">Ручной</tspan></text>
-        <text
-           id="text2963"
-           y="36.536129"
-           x="67.488579"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           xml:space="preserve"><tspan
-             dy="0 0 0 0 -3 3"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-             y="36.536129"
-             x="67.488579"
-             id="tspan2961"
-             sodipodi:role="line">30.0<tspan
-   id="tspan2959"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">о</tspan>С</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           x="67.401764"
-           y="46.265427"
-           id="text2969"><tspan
-             sodipodi:role="line"
-             id="tspan2967"
-             x="67.401764"
-             y="46.265427"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-             dy="0 0 0 0 -3 3">5.00<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-   id="tspan2965">о</tspan>С</tspan></text>
-        <text
-           id="text2975"
-           y="36.536129"
-           x="23.561312"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
-           xml:space="preserve"><tspan
-             dy="0 0 0 0 0 0 -3 3"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
-             y="36.536129"
-             x="23.561312"
-             id="tspan2973"
-             sodipodi:role="line">t=24.0<tspan
-   id="tspan2971"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">о</tspan>С</tspan></text>
-      </g>
-      <g
-         style="stroke-width:1.49519241"
-         id="g2997"
-         transform="matrix(0.66881026,0,0,0.66881027,65.820494,63.400642)">
-        <rect
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44855773;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect2979"
-           width="72.911125"
-           height="22.037447"
-           x="122.26251"
-           y="15.02849" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
-           x="124.02082"
-           y="33.666542"
-           id="text2983"><tspan
-             sodipodi:role="line"
-             id="tspan2981"
-             x="124.02082"
-             y="33.666542"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297">Вкл.</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
-           x="164.21815"
-           y="23.937246"
-           id="text2987"><tspan
-             sodipodi:role="line"
-             id="tspan2985"
-             x="164.21815"
-             y="23.937246"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297">Тр=0.1ч</tspan></text>
-        <text
-           id="text2991"
-           y="33.666542"
-           x="164.13133"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297"
-             y="33.666542"
-             x="164.13133"
-             id="tspan2989"
-             sodipodi:role="line">Тп=0.1ч</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
-           x="124.02082"
-           y="23.937246"
-           id="text2995"><tspan
-             sodipodi:role="line"
-             id="tspan2993"
-             x="124.02082"
-             y="23.937246"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297">Oxygen</tspan></text>
-      </g>
-      <g
-         transform="translate(-15.23866,22.054109)"
-         id="g4091">
-        <g
-           id="g4080">
-          <rect
-             ry="0"
-             y="41.4678"
-             x="38.952457"
-             height="5.9300256"
-             width="7.7194643"
-             id="rect2999"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <rect
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             id="rect3001"
-             width="13.506775"
-             height="2.6417816"
-             x="36.0588"
-             y="47.397823"
-             ry="0" />
-          <path
-             inkscape:connector-curvature="0"
-             id="path3003"
-             d="M 42.812186,38.220232 V 31.117623"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker4003)" />
-        </g>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="63.737732"
-           y="37.277706"
-           id="text3009"><tspan
-             sodipodi:role="line"
-             x="63.737732"
-             y="37.277706"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3005">однократное</tspan><tspan
-             id="tspan3007"
-             sodipodi:role="line"
-             x="64.266899"
-             y="40.664371"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332">нажатие </tspan><tspan
-             sodipodi:role="line"
-             x="64.266899"
-             y="44.051041"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3997">переключает </tspan><tspan
-             sodipodi:role="line"
-             x="63.737732"
-             y="47.437706"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3999">режим</tspan></text>
-      </g>
-      <g
-         transform="translate(0,28.601794)"
-         id="g3284">
-        <g
-           id="g2330"
-           transform="translate(0,-6.6309908)">
-          <circle
-             r="4.5588059"
-             cy="19.575922"
-             cx="103.94078"
-             id="path910"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <path
-             transform="scale(1,-1)"
-             id="path1298"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker1302);marker-end:url(#marker1342)"
-             sodipodi:type="arc"
-             sodipodi:cx="103.89934"
-             sodipodi:cy="-19.104275"
-             sodipodi:rx="8.0400763"
-             sodipodi:ry="8.0400763"
-             sodipodi:start="0.47032903"
-             sodipodi:end="2.6779451"
-             sodipodi:open="true"
-             d="m 111.06642,-15.460676 a 8.0400763,8.0400763 0 0 1 -7.19394,4.396433 8.0400763,8.0400763 0 0 1 -7.164405,-4.444401" />
-        </g>
-        <path
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend)"
-           d="M 89.642697,20.612012 H 119.56503"
-           id="path1998"
-           inkscape:connector-curvature="0" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="103.47703"
-           y="26.574667"
-           id="text3987"><tspan
-             sodipodi:role="line"
-             id="tspan3985"
-             x="103.47703"
-             y="26.574667"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332">вращение энкодера</tspan><tspan
-             sodipodi:role="line"
-             x="103.47703"
-             y="31.866333"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan3989">переключает меню</tspan></text>
-      </g>
-      <g
-         id="g4111"
-         transform="translate(115.57938,22.054109)">
-        <g
-           id="g4099">
-          <rect
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             id="rect4093"
-             width="7.7194643"
-             height="5.9300256"
-             x="38.952457"
-             y="41.4678"
-             ry="0" />
-          <rect
-             ry="0"
-             y="47.397823"
-             x="36.0588"
-             height="2.6417816"
-             width="13.506775"
-             id="rect4095"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <path
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker4003)"
-             d="M 42.812186,38.220232 V 31.117623"
-             id="path4097"
-             inkscape:connector-curvature="0" />
-        </g>
-        <text
-           id="text4109"
-           y="37.277706"
-           x="63.737732"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             id="tspan4101"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             y="37.277706"
-             x="63.737732"
-             sodipodi:role="line">однократное</tspan><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             y="40.664371"
-             x="64.266899"
-             sodipodi:role="line"
-             id="tspan4103">нажатие </tspan><tspan
-             id="tspan4105"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             y="44.051041"
-             x="64.266899"
-             sodipodi:role="line">переключает </tspan><tspan
-             id="tspan4107"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             y="47.437706"
-             x="63.737732"
-             sodipodi:role="line">режим</tspan></text>
-      </g>
-      <g
-         transform="translate(0,28.270245)"
-         id="g4343">
-        <g
-           id="g4272"
-           transform="translate(-22.42226,33.112921)">
-          <rect
-             ry="0"
-             y="37.532505"
-             x="38.331089"
-             height="7.4739628"
-             width="9.7292986"
-             id="rect4266"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <rect
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             id="rect4268"
-             width="17.023388"
-             height="3.3295937"
-             x="34.684044"
-             y="45.00647"
-             ry="0" />
-          <rect
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:1"
-             id="rect4270"
-             width="9.7292986"
-             height="3.752213"
-             x="38.331089"
-             y="41.254253"
-             ry="0" />
-        </g>
-        <path
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker2464)"
-           d="M 20.773476,68.7074 V 63.071057"
-           id="path4274"
-           inkscape:connector-curvature="0" />
-        <text
-           id="text4282"
-           y="66.340843"
-           x="49.275085"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7186532px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             y="66.340843"
-             x="49.864918"
-             id="tspan4276"
-             sodipodi:role="line">нажатие с </tspan><tspan
-             id="tspan4278"
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             y="70.115768"
-             x="49.275085"
-             sodipodi:role="line">удержанием</tspan><tspan
-             id="tspan4280"
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             y="73.890686"
-             x="49.864918"
-             sodipodi:role="line">переключает </tspan><tspan
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             y="77.665611"
-             x="49.275085"
-             sodipodi:role="line"
-             id="tspan4295">в режим настройки</tspan></text>
-      </g>
-      <g
-         id="g4365"
-         transform="translate(132.22468,28.270245)">
-        <g
-           transform="translate(-22.42226,33.112921)"
-           id="g4351">
-          <rect
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-             id="rect4345"
-             width="9.7292986"
-             height="7.4739628"
-             x="38.331089"
-             y="37.532505"
-             ry="0" />
-          <rect
-             ry="0"
-             y="45.00647"
-             x="34.684044"
-             height="3.3295937"
-             width="17.023388"
-             id="rect4347"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-          <rect
-             ry="0"
-             y="41.254253"
-             x="38.331089"
-             height="3.752213"
-             width="9.7292986"
-             id="rect4349"
-             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:1" />
-        </g>
-        <path
-           inkscape:connector-curvature="0"
-           id="path4353"
-           d="M 20.773476,68.7074 V 63.071057"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker2464)" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7186532px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="49.275085"
-           y="66.340843"
-           id="text4363"><tspan
-             sodipodi:role="line"
-             id="tspan4355"
-             x="49.864918"
-             y="66.340843"
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332">нажатие с </tspan><tspan
-             sodipodi:role="line"
-             x="49.275085"
-             y="70.115768"
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan4357">удержанием</tspan><tspan
-             sodipodi:role="line"
-             x="49.864918"
-             y="73.890686"
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
-             id="tspan4359">переключает </tspan><tspan
-             id="tspan4361"
-             sodipodi:role="line"
-             x="49.275085"
-             y="77.665611"
-             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332">в режим настройки</tspan></text>
-      </g>
-      <g
-         transform="translate(0,32.580389)"
-         id="g1769">
-        <circle
-           r="4.5588059"
-           cy="83.746094"
-           cx="103.94078"
-           id="circle3286"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        <path
-           transform="scale(1,-1)"
-           id="path3288"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker3818);marker-end:url(#marker3988)"
-           sodipodi:type="arc"
-           sodipodi:cx="103.89934"
-           sodipodi:cy="-83.274445"
-           sodipodi:rx="8.0400763"
-           sodipodi:ry="8.0400763"
-           sodipodi:start="0.47032903"
-           sodipodi:end="2.6779451"
-           sodipodi:open="true"
-           d="m 111.06642,-79.630846 a 8.0400763,8.0400763 0 0 1 -7.19394,4.396433 8.0400763,8.0400763 0 0 1 -7.164405,-4.444401" />
-        <text
-           id="text3298"
-           y="92.921448"
-           x="103.47703"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             y="92.921448"
-             x="103.47703"
-             id="tspan3294"
-             sodipodi:role="line">вращение энкодера</tspan><tspan
-             id="tspan3296"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-             y="98.213112"
-             x="103.47703"
-             sodipodi:role="line">переключает пункт</tspan></text>
-      </g>
-      <g
-         transform="translate(0,32.580389)"
-         id="g1000">
-        <rect
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="rect934"
-           width="48.865967"
-           height="14.769778"
-           x="14.897349"
-           y="81.609711" />
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="21.463469"
-           y="87.580475"
-           id="text956"><tspan
-             sodipodi:role="line"
-             id="tspan954"
-             x="21.463469"
-             y="87.580475"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
-             dy="0 0 0 0 0 0 -2 2">t=30.0оС</tspan></text>
-        <text
-           id="text974"
-           y="94.045692"
-           x="21.302767"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             dy="0 0 0 0 0 0 -2 2"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
-             y="94.045692"
-             x="21.302767"
-             id="tspan972"
-             sodipodi:role="line">α=5.00оС</tspan></text>
-        <path
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.30000004;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-           d="M 16.225207,86.2381 H 19.62359"
-           id="path982"
-           inkscape:connector-curvature="0" />
-        <path
-           d="m 94.300259,66.997976 a 5.7427249,6.6969671 0 0 1 -5.13836,3.662001 5.7427249,6.6969671 0 0 1 -5.117265,-3.701956"
-           sodipodi:open="true"
-           sodipodi:end="2.6779451"
-           sodipodi:start="0.47032903"
-           sodipodi:ry="6.6969671"
-           sodipodi:rx="5.7427249"
-           sodipodi:cy="63.963047"
-           sodipodi:cx="89.181084"
-           sodipodi:type="arc"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Sstart);marker-end:url(#Arrow1Send)"
-           id="path4986"
-           transform="matrix(0,1,1,0,0,0)" />
-      </g>
-      <g
-         transform="translate(0,32.580389)"
-         id="g991">
-        <rect
-           y="81.64061"
-           x="147.59091"
-           height="14.738871"
-           width="48.76371"
-           id="rect1771"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-        <text
-           id="text1779"
-           y="87.598877"
-           x="154.26633"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
-             y="87.598877"
-             x="154.26633"
-             id="tspan1777"
-             sodipodi:role="line">работа=0.1ч</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-           x="154.20827"
-           y="94.105927"
-           id="text1783"><tspan
-             sodipodi:role="line"
-             id="tspan1781"
-             x="154.20827"
-             y="94.105927"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">пауза=0.1ч</tspan></text>
-        <path
-           inkscape:connector-curvature="0"
-           id="path1808"
-           d="m 149.50812,86.2381 h 3.39839"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.30000004;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1812)" />
-        <path
-           transform="rotate(90)"
-           id="path8134"
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker8138);marker-end:url(#marker8142)"
-           sodipodi:type="arc"
-           sodipodi:cx="89.181084"
-           sodipodi:cy="-148.8027"
-           sodipodi:rx="5.7427249"
-           sodipodi:ry="6.6969671"
-           sodipodi:start="0.47032903"
-           sodipodi:end="2.6779451"
-           sodipodi:open="true"
-           d="m 94.300259,-145.76777 a 5.7427249,6.6969671 0 0 1 -5.13836,3.662 5.7427249,6.6969671 0 0 1 -5.117265,-3.70196" />
-      </g>
-      <circle
-         r="4.5588059"
-         cy="144.92828"
-         cx="103.94078"
-         id="circle1002"
-         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <path
-         transform="scale(1,-1)"
-         id="path1004"
-         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker3818);marker-end:url(#marker3988)"
-         sodipodi:type="arc"
-         sodipodi:cx="103.89934"
-         sodipodi:cy="-144.45663"
-         sodipodi:rx="8.0400763"
-         sodipodi:ry="8.0400763"
-         sodipodi:start="0.47032903"
-         sodipodi:end="2.6779451"
-         sodipodi:open="true"
-         d="m 111.06642,-140.81304 a 8.0400763,8.0400763 0 0 1 -7.19394,4.39644 8.0400763,8.0400763 0 0 1 -7.164405,-4.4444" />
-      <text
-         id="text1010"
-         y="154.10362"
-         x="103.47703"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-           y="154.10362"
-           x="104.0062"
-           id="tspan1006"
-           sodipodi:role="line">нажатие и удержание энкодера с вращением </tspan><tspan
-           id="tspan1008"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
-           y="159.39529"
-           x="103.47703"
-           sodipodi:role="line">меняет значение</tspan></text>
-      <g
-         transform="translate(17.988617,32.16931)"
-         id="g1025">
-        <circle
-           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-           id="path1019"
-           cx="85.952164"
-           cy="112.75897"
-           r="1.9050851" />
-        <circle
-           r="0.91043645"
-           cy="112.75897"
-           cx="85.952164"
-           id="circle1021"
-           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      </g>
-    </g>
     <g
        id="g16014"
        transform="translate(205,-58.999995)">
@@ -2749,7 +2029,7 @@
     </g>
     <g
        id="g9511"
-       transform="translate(-210,-124)">
+       transform="translate(-385,-409)">
       <text
          id="text2368"
          y="230.83481"
@@ -4079,6 +3359,750 @@
              id="tspan9016"
              sodipodi:role="line">KL2</tspan></text>
       </g>
+    </g>
+    <g
+       id="g2358"
+       transform="translate(-4.9999993,3.0000023)">
+      <g
+         style="stroke-width:1.49206352"
+         transform="matrix(0.67021276,0,0,0.67021276,56.387347,105.48378)"
+         id="g859">
+        <rect
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44761908;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect815"
+           width="72.911125"
+           height="22.037447"
+           x="21.803005"
+           y="27.627373" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           x="23.561312"
+           y="46.265427"
+           id="text823"><tspan
+             sodipodi:role="line"
+             id="tspan821"
+             x="23.561312"
+             y="46.265427"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">Автомат.</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           x="67.488579"
+           y="36.536129"
+           id="text827"><tspan
+             sodipodi:role="line"
+             id="tspan825"
+             x="67.488579"
+             y="36.536129"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+             dy="0 0 0 0 -3 3">30.0<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+   id="tspan833">о</tspan>С</tspan></text>
+        <text
+           id="text839"
+           y="46.265427"
+           x="67.401764"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           xml:space="preserve"><tspan
+             dy="0 0 0 0 -3 3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+             y="46.265427"
+             x="67.401764"
+             id="tspan837"
+             sodipodi:role="line">5.00<tspan
+   id="tspan835"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">о</tspan>С</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           x="23.561312"
+           y="36.536129"
+           id="text845"><tspan
+             sodipodi:role="line"
+             id="tspan843"
+             x="23.561312"
+             y="36.536129"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+             dy="0 0 0 0 0 0 -3 3">t=24.0<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+   id="tspan841">о</tspan>С</tspan></text>
+      </g>
+      <g
+         style="stroke-width:1.49519229"
+         transform="matrix(0.66881027,0,0,0.66881027,121.92314,113.94879)"
+         id="g908">
+        <rect
+           y="15.02849"
+           x="122.26251"
+           height="22.037447"
+           width="72.911125"
+           id="rect861"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44855773;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text865"
+           y="33.666542"
+           x="124.02082"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294"
+             y="33.666542"
+             x="124.02082"
+             id="tspan863"
+             sodipodi:role="line">Выкл.</tspan></text>
+        <text
+           id="text871"
+           y="23.937246"
+           x="164.21815"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294"
+             y="23.937246"
+             x="164.21815"
+             id="tspan869"
+             sodipodi:role="line">Тр=0.1ч</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
+           x="164.13133"
+           y="33.666542"
+           id="text877"><tspan
+             sodipodi:role="line"
+             id="tspan875"
+             x="164.13133"
+             y="33.666542"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294">Тп=0.1ч</tspan></text>
+        <text
+           id="text883"
+           y="23.937246"
+           x="124.02082"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560294"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560294"
+             y="23.937246"
+             x="124.02082"
+             id="tspan881"
+             sodipodi:role="line">Oxygen</tspan></text>
+      </g>
+      <g
+         style="stroke-width:1.49206352"
+         id="g2977"
+         transform="matrix(0.67021276,0,0,0.67021276,56.387347,143.47987)">
+        <rect
+           y="27.627373"
+           x="21.803005"
+           height="22.037447"
+           width="72.911125"
+           id="rect2953"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44761908;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text2957"
+           y="46.265427"
+           x="23.561312"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+             y="46.265427"
+             x="23.561312"
+             id="tspan2955"
+             sodipodi:role="line">Ручной</tspan></text>
+        <text
+           id="text2963"
+           y="36.536129"
+           x="67.488579"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           xml:space="preserve"><tspan
+             dy="0 0 0 0 -3 3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+             y="36.536129"
+             x="67.488579"
+             id="tspan2961"
+             sodipodi:role="line">30.0<tspan
+   id="tspan2959"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">о</tspan>С</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           x="67.401764"
+           y="46.265427"
+           id="text2969"><tspan
+             sodipodi:role="line"
+             id="tspan2967"
+             x="67.401764"
+             y="46.265427"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+             dy="0 0 0 0 -3 3">5.00<tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+   id="tspan2965">о</tspan>С</tspan></text>
+        <text
+           id="text2975"
+           y="36.536129"
+           x="23.561312"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39477512"
+           xml:space="preserve"><tspan
+             dy="0 0 0 0 0 0 -3 3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512"
+             y="36.536129"
+             x="23.561312"
+             id="tspan2973"
+             sodipodi:role="line">t=24.0<tspan
+   id="tspan2971"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39477512">о</tspan>С</tspan></text>
+      </g>
+      <g
+         style="stroke-width:1.49519241"
+         id="g2997"
+         transform="matrix(0.66881026,0,0,0.66881027,121.92314,151.74135)">
+        <rect
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.44855773;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect2979"
+           width="72.911125"
+           height="22.037447"
+           x="122.26251"
+           y="15.02849" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
+           x="124.02082"
+           y="33.666542"
+           id="text2983"><tspan
+             sodipodi:role="line"
+             id="tspan2981"
+             x="124.02082"
+             y="33.666542"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297">Вкл.</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
+           x="164.21815"
+           y="23.937246"
+           id="text2987"><tspan
+             sodipodi:role="line"
+             id="tspan2985"
+             x="164.21815"
+             y="23.937246"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297">Тр=0.1ч</tspan></text>
+        <text
+           id="text2991"
+           y="33.666542"
+           x="164.13133"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297"
+             y="33.666542"
+             x="164.13133"
+             id="tspan2989"
+             sodipodi:role="line">Тп=0.1ч</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39560297"
+           x="124.02082"
+           y="23.937246"
+           id="text2995"><tspan
+             sodipodi:role="line"
+             id="tspan2993"
+             x="124.02082"
+             y="23.937246"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46666622px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.39560297">Oxygen</tspan></text>
+      </g>
+      <g
+         transform="translate(40.86399,110.39482)"
+         id="g4091">
+        <g
+           id="g4080">
+          <rect
+             ry="0"
+             y="41.4678"
+             x="38.952457"
+             height="5.9300256"
+             width="7.7194643"
+             id="rect2999"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect3001"
+             width="13.506775"
+             height="2.6417816"
+             x="36.0588"
+             y="47.397823"
+             ry="0" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path3003"
+             d="M 42.812186,38.220232 V 31.117623"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker4003)" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="63.737732"
+           y="37.277706"
+           id="text3009"><tspan
+             sodipodi:role="line"
+             x="63.737732"
+             y="37.277706"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3005">однократное</tspan><tspan
+             id="tspan3007"
+             sodipodi:role="line"
+             x="64.266899"
+             y="40.664371"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332">нажатие </tspan><tspan
+             sodipodi:role="line"
+             x="64.266899"
+             y="44.051041"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3997">переключает </tspan><tspan
+             sodipodi:role="line"
+             x="63.737732"
+             y="47.437706"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3999">режим</tspan></text>
+      </g>
+      <g
+         transform="translate(56.10265,116.9425)"
+         id="g3284">
+        <g
+           id="g2330"
+           transform="translate(0,-6.6309908)">
+          <circle
+             r="4.5588059"
+             cy="19.575922"
+             cx="103.94078"
+             id="path910"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <path
+             transform="scale(1,-1)"
+             id="path1298"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker1302);marker-end:url(#marker1342)"
+             sodipodi:type="arc"
+             sodipodi:cx="103.89934"
+             sodipodi:cy="-19.104275"
+             sodipodi:rx="8.0400763"
+             sodipodi:ry="8.0400763"
+             sodipodi:start="0.47032903"
+             sodipodi:end="2.6779451"
+             sodipodi:open="true"
+             d="m 111.06642,-15.460676 a 8.0400763,8.0400763 0 0 1 -7.19394,4.396433 8.0400763,8.0400763 0 0 1 -7.164405,-4.444401" />
+        </g>
+        <path
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#Arrow2Lend)"
+           d="M 89.642697,20.612012 H 119.56503"
+           id="path1998"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="103.47703"
+           y="26.574667"
+           id="text3987"><tspan
+             sodipodi:role="line"
+             id="tspan3985"
+             x="103.47703"
+             y="26.574667"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332">вращение энкодера</tspan><tspan
+             sodipodi:role="line"
+             x="103.47703"
+             y="31.866333"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan3989">переключает меню</tspan></text>
+      </g>
+      <g
+         id="g4111"
+         transform="translate(171.68203,110.39482)">
+        <g
+           id="g4099">
+          <rect
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect4093"
+             width="7.7194643"
+             height="5.9300256"
+             x="38.952457"
+             y="41.4678"
+             ry="0" />
+          <rect
+             ry="0"
+             y="47.397823"
+             x="36.0588"
+             height="2.6417816"
+             width="13.506775"
+             id="rect4095"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <path
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker4003)"
+             d="M 42.812186,38.220232 V 31.117623"
+             id="path4097"
+             inkscape:connector-curvature="0" />
+        </g>
+        <text
+           id="text4109"
+           y="37.277706"
+           x="63.737732"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             id="tspan4101"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             y="37.277706"
+             x="63.737732"
+             sodipodi:role="line">однократное</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             y="40.664371"
+             x="64.266899"
+             sodipodi:role="line"
+             id="tspan4103">нажатие </tspan><tspan
+             id="tspan4105"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             y="44.051041"
+             x="64.266899"
+             sodipodi:role="line">переключает </tspan><tspan
+             id="tspan4107"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             y="47.437706"
+             x="63.737732"
+             sodipodi:role="line">режим</tspan></text>
+      </g>
+      <g
+         transform="translate(56.10265,116.61095)"
+         id="g4343">
+        <g
+           id="g4272"
+           transform="translate(-22.42226,33.112921)">
+          <rect
+             ry="0"
+             y="37.532505"
+             x="38.331089"
+             height="7.4739628"
+             width="9.7292986"
+             id="rect4266"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect4268"
+             width="17.023388"
+             height="3.3295937"
+             x="34.684044"
+             y="45.00647"
+             ry="0" />
+          <rect
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect4270"
+             width="9.7292986"
+             height="3.752213"
+             x="38.331089"
+             y="41.254253"
+             ry="0" />
+        </g>
+        <path
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker2464)"
+           d="M 20.773476,68.7074 V 63.071057"
+           id="path4274"
+           inkscape:connector-curvature="0" />
+        <text
+           id="text4282"
+           y="66.340843"
+           x="49.275085"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7186532px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="66.340843"
+             x="49.864918"
+             id="tspan4276"
+             sodipodi:role="line">нажатие с </tspan><tspan
+             id="tspan4278"
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="70.115768"
+             x="49.275085"
+             sodipodi:role="line">удержанием</tspan><tspan
+             id="tspan4280"
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="73.890686"
+             x="49.864918"
+             sodipodi:role="line">переключает </tspan><tspan
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             y="77.665611"
+             x="49.275085"
+             sodipodi:role="line"
+             id="tspan4295">в режим настройки</tspan></text>
+      </g>
+      <g
+         id="g4365"
+         transform="translate(188.32733,116.61095)">
+        <g
+           transform="translate(-22.42226,33.112921)"
+           id="g4351">
+          <rect
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             id="rect4345"
+             width="9.7292986"
+             height="7.4739628"
+             x="38.331089"
+             y="37.532505"
+             ry="0" />
+          <rect
+             ry="0"
+             y="45.00647"
+             x="34.684044"
+             height="3.3295937"
+             width="17.023388"
+             id="rect4347"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <rect
+             ry="0"
+             y="41.254253"
+             x="38.331089"
+             height="3.752213"
+             width="9.7292986"
+             id="rect4349"
+             style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.90000004, 0.90000004;stroke-dashoffset:0;stroke-opacity:1" />
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="path4353"
+           d="M 20.773476,68.7074 V 63.071057"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker2464)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.7186532px;line-height:0.80000001;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="49.275085"
+           y="66.340843"
+           id="text4363"><tspan
+             sodipodi:role="line"
+             id="tspan4355"
+             x="49.864918"
+             y="66.340843"
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332">нажатие с </tspan><tspan
+             sodipodi:role="line"
+             x="49.275085"
+             y="70.115768"
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan4357">удержанием</tspan><tspan
+             sodipodi:role="line"
+             x="49.864918"
+             y="73.890686"
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+             id="tspan4359">переключает </tspan><tspan
+             id="tspan4361"
+             sodipodi:role="line"
+             x="49.275085"
+             y="77.665611"
+             style="line-height:0.80000001;text-align:center;text-anchor:middle;stroke-width:0.26458332">в режим настройки</tspan></text>
+      </g>
+      <g
+         transform="translate(56.10265,120.9211)"
+         id="g1769">
+        <circle
+           r="4.5588059"
+           cy="83.746094"
+           cx="103.94078"
+           id="circle3286"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           transform="scale(1,-1)"
+           id="path3288"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker3818);marker-end:url(#marker3988)"
+           sodipodi:type="arc"
+           sodipodi:cx="103.89934"
+           sodipodi:cy="-83.274445"
+           sodipodi:rx="8.0400763"
+           sodipodi:ry="8.0400763"
+           sodipodi:start="0.47032903"
+           sodipodi:end="2.6779451"
+           sodipodi:open="true"
+           d="m 111.06642,-79.630846 a 8.0400763,8.0400763 0 0 1 -7.19394,4.396433 8.0400763,8.0400763 0 0 1 -7.164405,-4.444401" />
+        <text
+           id="text3298"
+           y="92.921448"
+           x="103.47703"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             y="92.921448"
+             x="103.47703"
+             id="tspan3294"
+             sodipodi:role="line">вращение энкодера</tspan><tspan
+             id="tspan3296"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+             y="98.213112"
+             x="103.47703"
+             sodipodi:role="line">переключает пункт</tspan></text>
+      </g>
+      <g
+         transform="translate(56.10265,120.9211)"
+         id="g1000">
+        <rect
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect934"
+           width="48.865967"
+           height="14.769778"
+           x="14.897349"
+           y="81.609711" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="21.463469"
+           y="87.580475"
+           id="text956"><tspan
+             sodipodi:role="line"
+             id="tspan954"
+             x="21.463469"
+             y="87.580475"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+             dy="0 0 0 0 0 0 -2 2">t=30.0оС</tspan></text>
+        <text
+           id="text974"
+           y="94.045692"
+           x="21.302767"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             dy="0 0 0 0 0 0 -2 2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.67446756px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+             y="94.045692"
+             x="21.302767"
+             id="tspan972"
+             sodipodi:role="line">α=5.00оС</tspan></text>
+        <path
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.30000004;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+           d="M 16.225207,86.2381 H 19.62359"
+           id="path982"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 94.300259,66.997976 a 5.7427249,6.6969671 0 0 1 -5.13836,3.662001 5.7427249,6.6969671 0 0 1 -5.117265,-3.701956"
+           sodipodi:open="true"
+           sodipodi:end="2.6779451"
+           sodipodi:start="0.47032903"
+           sodipodi:ry="6.6969671"
+           sodipodi:rx="5.7427249"
+           sodipodi:cy="63.963047"
+           sodipodi:cx="89.181084"
+           sodipodi:type="arc"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Sstart);marker-end:url(#Arrow1Send)"
+           id="path4986"
+           transform="matrix(0,1,1,0,0,0)" />
+      </g>
+      <g
+         transform="translate(56.10265,120.9211)"
+         id="g991">
+        <rect
+           y="81.64061"
+           x="147.59091"
+           height="14.738871"
+           width="48.76371"
+           id="rect1771"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text1779"
+           y="87.598877"
+           x="154.26633"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+             y="87.598877"
+             x="154.26633"
+             id="tspan1777"
+             sodipodi:role="line">работа=0.1ч</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="154.20827"
+           y="94.105927"
+           id="text1783"><tspan
+             sodipodi:role="line"
+             id="tspan1781"
+             x="154.20827"
+             y="94.105927"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.66259336px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">пауза=0.1ч</tspan></text>
+        <path
+           inkscape:connector-curvature="0"
+           id="path1808"
+           d="m 149.50812,86.2381 h 3.39839"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.30000004;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker1812)" />
+        <path
+           transform="rotate(90)"
+           id="path8134"
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker8138);marker-end:url(#marker8142)"
+           sodipodi:type="arc"
+           sodipodi:cx="89.181084"
+           sodipodi:cy="-148.8027"
+           sodipodi:rx="5.7427249"
+           sodipodi:ry="6.6969671"
+           sodipodi:start="0.47032903"
+           sodipodi:end="2.6779451"
+           sodipodi:open="true"
+           d="m 94.300259,-145.76777 a 5.7427249,6.6969671 0 0 1 -5.13836,3.662 5.7427249,6.6969671 0 0 1 -5.117265,-3.70196" />
+      </g>
+      <circle
+         r="4.5588059"
+         cy="233.269"
+         cx="160.04343"
+         id="circle1002"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         transform="scale(1,-1)"
+         id="path1004"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker3818);marker-end:url(#marker3988)"
+         sodipodi:type="arc"
+         sodipodi:cx="160.00198"
+         sodipodi:cy="-232.79735"
+         sodipodi:rx="8.0400763"
+         sodipodi:ry="8.0400763"
+         sodipodi:start="0.47032903"
+         sodipodi:end="2.6779451"
+         sodipodi:open="true"
+         d="m 167.16906,-229.15375 a 8.0400763,8.0400763 0 0 1 -7.19394,4.39643 8.0400763,8.0400763 0 0 1 -7.1644,-4.4444" />
+      <text
+         id="text1010"
+         y="242.44434"
+         x="159.57968"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+           y="242.44434"
+           x="160.10884"
+           id="tspan1006"
+           sodipodi:role="line">нажатие и удержание энкодера с вращением </tspan><tspan
+           id="tspan1008"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;stroke-width:0.26458332"
+           y="247.73601"
+           x="159.57968"
+           sodipodi:role="line">меняет значение</tspan></text>
+      <g
+         transform="translate(74.091267,120.51002)"
+         id="g1025">
+        <circle
+           style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path1019"
+           cx="85.952164"
+           cy="112.75897"
+           r="1.9050851" />
+        <circle
+           r="0.91043645"
+           cy="112.75897"
+           cx="85.952164"
+           id="circle1021"
+           style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.30000001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+      <text
+         id="text2222"
+         y="116.94488"
+         x="84.837395"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332"
+           y="116.94488"
+           x="84.837395"
+           id="tspan2220"
+           sodipodi:role="line">Меню №1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;line-height:1.25;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="216.03316"
+         y="116.94488"
+         id="text2226"><tspan
+           sodipodi:role="line"
+           id="tspan2224"
+           x="216.03316"
+           y="116.94488"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">Меню №2</tspan></text>
     </g>
   </g>
 </svg>
