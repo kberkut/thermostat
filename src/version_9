@@ -45,8 +45,9 @@ unsigned int menuIdParent, menuIdChild;
 float tempNeed = 30, getTemp, hysteresis = 4;
 String arrow = "\xB7E";
 int timeWorkHours = 1, timePauseHours = 1;
-unsigned long timerOxigen, timerRequestTemp, timerRedraw, 
-              kHours = 3600; // переводной коэффициент. Переводим в часы.
+unsigned long timerOxigen, timerRequestTemp, timerRedraw, countReturnToMainMenu,
+              kHours = 3600, // переводной коэффициент. Переводим в часы.
+              timerCountReturnToMainMenu = 10000; // Таймер автовозврата в главное меню показа температуры.
 int addresstempNeed = 15, // разносим адреса через десятки, а то глючит.
     addressHysteresis = 25,
     addressTimeWorkHours = 35,
@@ -356,13 +357,18 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
 
 void switchMenu()
 {
+
   if (flagChildMenu == 0 && flagSwitchMenu == 1)
   {
     flagSwitchMenu = 0;
     flagChildMenu = 1;
+    countReturnToMainMenu = millis();
+
   }
   else if (flagChildMenu == 1 && flagSwitchMenu == 1)
   {
+    countReturnToMainMenu = millis();
+
     if (menuIdChild == 0)
     {
       EEPROM.put(addresstempNeed, tempNeed);
@@ -396,6 +402,8 @@ void parentMenuEnc()
   }
   if (enc1.isRight()) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
   {
+    countReturnToMainMenu = millis();
+
     if (flagChildMenu == 0)
     {
       flagMenuRedraw = 1;
@@ -417,6 +425,8 @@ void parentMenuEnc()
   }
   if (enc1.isLeft()) // Вращение ручки енкодера. Циклическое перемещение стрелки по пунктам.
   {
+    countReturnToMainMenu = millis();
+
     if (flagChildMenu == 0)
     {
       flagMenuRedraw = 1;
@@ -443,6 +453,8 @@ void childMenuEnc()
   if (enc1.isRightH() && flagChildMenu == 1) // Удержание кнопки с вращением ручки енкодера. Изменение переменной.
   {
     flagMenuRedraw = 1;
+    countReturnToMainMenu = millis();
+
 
     if (menuIdChild == 0 && countChoseLineMenu == 0)
     {
@@ -481,6 +493,8 @@ void childMenuEnc()
   if (enc1.isLeftH() && flagChildMenu == 1) // Удержание кнопки с вращением ручки енкодера. Изменение переменной.
   {
     flagMenuRedraw = 1;
+    countReturnToMainMenu = millis();
+
 
     if (menuIdChild == 0 && countChoseLineMenu == 0)
     {
@@ -554,6 +568,19 @@ void childMenu()
   }
 }
 
+void autoReturnToMainMenu()
+{
+  if ((millis() - countReturnToMainMenu >= timerCountReturnToMainMenu))
+  {                         // ищем разницу в мс
+    countReturnToMainMenu = millis(); // сброс таймера
+    countChoseParentMenu = 0;
+    if (flagChildMenu == 1)
+    {
+      flagSwitchMenu = 1;
+    }
+  }
+}
+
 void loop()
 {
   enc1.tick();
@@ -574,6 +601,7 @@ void loop()
     childMenu();
     flagMenuRedraw = 0;
   }
+  autoReturnToMainMenu();
   wdt_reset();
 
   // == Отладка
