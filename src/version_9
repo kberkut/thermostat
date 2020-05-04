@@ -306,14 +306,14 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
 {
   if (flagAuto == 1 && flagOxygen == 1)
   {
-    if ((millis() - timerOxigen >= timePauseHours * 1000) && flagTimerVentWork == 0)
-    // 60*60*1000 !!!!
+    if ((millis() - timerOxigen >= timePauseHours * 60 * 60 *1000) && flagTimerVentWork == 0)
+    // 60 * 60 * 1000 !!!!
     {
       flagTimerVentWork = 1;
       timerOxigen = millis();             // сброс таймера
       digitalWrite(KM2NO_VENT_PIN, LOW); // На замыкание котактов. Если низкая то греем.
     }
-    if ((millis() - timerOxigen >= timeWorkHours * 1000) && flagTimerVentWork == 1)
+    if ((millis() - timerOxigen >= timeWorkHours * 60 * 60 *1000) && flagTimerVentWork == 1)
     // 60*60*1000 !!!!
     {
       flagTimerVentWork = 0;
