@@ -49,7 +49,7 @@ unsigned long timerOxigen, timerRequestTemp, timerRedraw, countReturnToMainMenu,
               kHours = 3600, // переводной коэффициент. Переводим в часы.
               timerCountReturnToMainMenu = 10000; // Таймер автовозврата в главное меню показа температуры.
 int addresstempNeed = 15, // разносим адреса через десятки, а то глючит.
-    addressHysteresis = 25,
+    addressHysteresis = 25, 
     addressTimeWorkHours = 35,
     addressTimePauseHours = 100,
     addressFlagAuto = 65,
