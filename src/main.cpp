@@ -66,11 +66,8 @@ void setup()
   pinMode(KM2NO_VENT_PIN, OUTPUT);
   pinMode(HL_VENT_PIN, OUTPUT);
   digitalWrite(KM1NO_AUTO_PIN, RELAY_OFF);
-  delay(10);
   digitalWrite(KM1NC_AUTO_PIN, RELAY_OFF);
-  delay(10);
   digitalWrite(KM2NO_VENT_PIN, RELAY_OFF);
-  delay(10);
   sensor1.setResolution(9);
   EEPROM.get(addressFlagAuto, flagAuto);
   delay(10);
