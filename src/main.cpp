@@ -13,13 +13,13 @@
 //
 // Коды символов диспреля 1602 http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/pytayus-sodat-menyu#comment-531165
 
-#define CLK 2
-#define DT 3
-#define SW 4
-#define HL_VENT_PIN 9     // Индикация состояния режима работы вентилятора кислород
+#define CLK 2 // энкодер
+#define DT 3 // энкодер
+#define SW 4 // энкодер
+#define HL_VENT_PIN 9     // Индикация состояния режима работы вентилятора -> кислород
 #define KM2NO_VENT_PIN 10 // пин реле для включения цепи магнитного пускателя вентилятора кислорода
 #define KM1NO_AUTO_PIN 11 // пин реле для включения цепи пускателя вентилятора отопления
-#define KM1NC_AUTO_PIN 8
+#define KM1NC_AUTO_PIN 8 // пин реле для выключения цепи пускателя вентилятора отопления
 #define DS_PIN 12      // 1-wire
 #define HL_AUTO_PIN 13 // Индикация работы в автоматическом режиме
 
@@ -42,7 +42,7 @@ unsigned int amountParentMenu = 2, countChoseParentMenu = 0, countChoseLineMenu 
 unsigned int menuIdParent, menuIdChild;
 float tempNeed = 30, getTemp, hysteresis = 4;
 String arrow = "\xB7E";
-unsigned int timeWorkHours = 1, timePauseHours = 1;
+int timeWorkHours = 1, timePauseHours = 1;
 unsigned long timerOxigen, timerRequestTemp, timerRedraw;
 int addresstempNeed = 15, // разносим адреса через десятки, а то глючит.
     addressHysteresis = 25,
@@ -271,18 +271,18 @@ void writeKM1_AUTO_PIN() // Для релейного регулирования
   if (flagAuto == 1)
   {
 
-    if ((getTemp < (tempNeed - hysteresis / 2)) && flagWorkKM1 == 0) // && flagWorkKM1 == 0
+    if ((getTemp < (tempNeed - hysteresis / 2)) && flagWorkKM1 == 0)
     {
       flagWorkKM1 = 1;
-      digitalWrite(KM1NC_AUTO_PIN, HIGH);
-      digitalWrite(KM1NO_AUTO_PIN, LOW); // На замыкание контактов. Если низкая температура то греем.
+      digitalWrite(KM1NC_AUTO_PIN, HIGH); // Управление по низкому уровню. Выключить при выполнении условия.
+      digitalWrite(KM1NO_AUTO_PIN, LOW); // Управление по низкому уровню. Включить при выполнении условия.
     }
 
-    if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1) // && flagWorkKM1 == 1
+    if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1)
     {
       flagWorkKM1 = 0;
       digitalWrite(KM1NO_AUTO_PIN, HIGH);
-      digitalWrite(KM1NC_AUTO_PIN, LOW); // На размыкание контактов, если высокая температура.
+      digitalWrite(KM1NC_AUTO_PIN, LOW);
     }
     if (flagHL_AUTO == 0)
     {
@@ -440,18 +440,34 @@ void childMenuEnc()
     if (menuIdChild == 0 && countChoseLineMenu == 0)
     {
       tempNeed++;
+      if (tempNeed > 100)
+      {
+        tempNeed = 100;
+      }
     }
     else if (menuIdChild == 0 && countChoseLineMenu == 1)
     {
       hysteresis++;
+      if (hysteresis > 100)
+      {
+        hysteresis = 100;
+      }
     }
     else if (menuIdChild == 1 && countChoseLineMenu == 0)
     {
       timeWorkHours++;
+      if (timeWorkHours > 240)
+      {
+        countChoseParentMenu = 240;
+      }
     }
     else if (menuIdChild == 1 && countChoseLineMenu == 1)
     {
-      timeWorkHours--;
+      timePauseHours++;
+      if (timePauseHours > 240)
+      {
+        timePauseHours = 240;
+      }
     }
   }
 
@@ -462,18 +478,34 @@ void childMenuEnc()
     if (menuIdChild == 0 && countChoseLineMenu == 0)
     {
       tempNeed--;
+      if (tempNeed < 0)
+      {
+        tempNeed = 0;
+      }
     }
     else if (menuIdChild == 0 && countChoseLineMenu == 1)
     {
       hysteresis--;
+      if (hysteresis < 0)
+      {
+        hysteresis = 0;
+      }
     }
     else if (menuIdChild == 1 && countChoseLineMenu == 0)
     {
       timeWorkHours--;
+      if (timeWorkHours < 1)
+      {
+        timeWorkHours = 0;
+      }
     }
     else if (menuIdChild == 1 && countChoseLineMenu == 1)
     {
       timePauseHours--;
+      if (timePauseHours < 1)
+      {
+        timePauseHours = 0;
+      }
     }
   }
 }
