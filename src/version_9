@@ -13,15 +13,17 @@
 //
 // Коды символов диспреля 1602 http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/pytayus-sodat-menyu#comment-531165
 
-#define CLK 2 // энкодер
-#define DT 3 // энкодер
-#define SW 4 // энкодер
+#define CLK 2             // энкодер
+#define DT 3              // энкодер
+#define SW 4              // энкодер
 #define HL_VENT_PIN 9     // Индикация состояния режима работы вентилятора -> кислород
 #define KM2NO_VENT_PIN 10 // пин реле для включения цепи магнитного пускателя вентилятора кислорода
 #define KM1NO_AUTO_PIN 11 // пин реле для включения цепи пускателя вентилятора отопления
-#define KM1NC_AUTO_PIN 8 // пин реле для выключения цепи пускателя вентилятора отопления
-#define DS_PIN 12      // 1-wire
-#define HL_AUTO_PIN 13 // Индикация работы в автоматическом режиме
+#define KM1NC_AUTO_PIN 8  // пин реле для выключения цепи пускателя вентилятора отопления
+#define DS_PIN 12         // 1-wire
+#define HL_AUTO_PIN 13    // Индикация работы в автоматическом режиме
+#define RELAY_ON LOW      // уровень для включения реле
+#define RELAY_OFF HIGH    // уровень для выключения реле
 
 #include <Arduino.h>
 #include <LCD_1602_RUS.h>
@@ -274,15 +276,15 @@ void writeKM1_AUTO_PIN() // Для релейного регулирования
     if ((getTemp < (tempNeed - hysteresis / 2)) && flagWorkKM1 == 0)
     {
       flagWorkKM1 = 1;
-      digitalWrite(KM1NC_AUTO_PIN, HIGH); // Управление по низкому уровню. Выключить при выполнении условия.
-      digitalWrite(KM1NO_AUTO_PIN, LOW); // Управление по низкому уровню. Включить при выполнении условия.
+      digitalWrite(KM1NC_AUTO_PIN, RELAY_OFF); // Управление по низкому уровню. Выключить при выполнении условия.
+      digitalWrite(KM1NO_AUTO_PIN, RELAY_ON);  // Управление по низкому уровню. Включить при выполнении условия.
     }
 
     if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1)
     {
       flagWorkKM1 = 0;
-      digitalWrite(KM1NO_AUTO_PIN, HIGH);
-      digitalWrite(KM1NC_AUTO_PIN, LOW);
+      digitalWrite(KM1NO_AUTO_PIN, RELAY_OFF);
+      digitalWrite(KM1NC_AUTO_PIN, RELAY_ON);
     }
     if (flagHL_AUTO == 0)
     {
@@ -294,10 +296,11 @@ void writeKM1_AUTO_PIN() // Для релейного регулирования
   {
     if (flagHL_AUTO == 1)
     {
-      flagHL_AUTO = 0; flagWorkKM1 = 0;
+      flagHL_AUTO = 0;
+      flagWorkKM1 = 0;
       digitalWrite(HL_AUTO_PIN, LOW);
-      digitalWrite(KM1NO_AUTO_PIN, HIGH);
-      digitalWrite(KM1NC_AUTO_PIN, HIGH);
+      digitalWrite(KM1NO_AUTO_PIN, RELAY_OFF);
+      digitalWrite(KM1NC_AUTO_PIN, RELAY_OFF);
     }
   }
 }
@@ -306,19 +309,19 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
 {
   if (flagAuto == 1 && flagOxygen == 1)
   {
-    if ((millis() - timerOxigen >= timePauseHours * 60 * 60 *1000) && flagTimerVentWork == 0)
+    if ((millis() - timerOxigen >= timePauseHours * 60 * 60 * 1000) && flagTimerVentWork == 0)
     // 60 * 60 * 1000 !!!!
     {
       flagTimerVentWork = 1;
-      timerOxigen = millis();             // сброс таймера
-      digitalWrite(KM2NO_VENT_PIN, LOW); // На замыкание котактов. Если низкая то греем.
+      timerOxigen = millis();                 // сброс таймера
+      digitalWrite(KM2NO_VENT_PIN, RELAY_ON); // На замыкание котактов. Если низкая то греем.
     }
-    if ((millis() - timerOxigen >= timeWorkHours * 60 * 60 *1000) && flagTimerVentWork == 1)
-    // 60*60*1000 !!!!
+    if ((millis() - timerOxigen >= timeWorkHours * 60 * 60 * 1000) && flagTimerVentWork == 1)
+    // 60 * 60 * 1000 !!!!
     {
       flagTimerVentWork = 0;
       timerOxigen = millis(); // сброс таймера
-      digitalWrite(KM2NO_VENT_PIN, HIGH);
+      digitalWrite(KM2NO_VENT_PIN, RELAY_OFF);
     }
     if (flagHL_VENT == 0)
     {
@@ -332,7 +335,7 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
     {
       flagHL_VENT = 0;
       digitalWrite(HL_VENT_PIN, LOW);
-      digitalWrite(KM2NO_VENT_PIN, HIGH);
+      digitalWrite(KM2NO_VENT_PIN, RELAY_OFF);
     }
   }
 
@@ -341,7 +344,7 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
     if (flagHL_VENT == 1)
     {
       flagHL_VENT = 0;
-      digitalWrite(KM2NO_VENT_PIN, HIGH);
+      digitalWrite(KM2NO_VENT_PIN, RELAY_OFF);
       digitalWrite(HL_VENT_PIN, LOW);
     }
   }
