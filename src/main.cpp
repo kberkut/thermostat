@@ -1,14 +1,14 @@
-// Термостат для поддержания температуры в сушке
+// Термостат для поддержания температуры в камере ферментации
 // v.9
 // Рабочая стабильная прошивка
 // Обновлено меню
-// Схема включается в паре с кнопочной станцией!
+// Схема интегрируется в схему кнопочной станции!
 // Управление реле для вентилятора температуры в двухпозиционном режиме дублируя цепи управления кнопочной станции.
 // Управление реле для вентилятора кислорода в двухпозиционном режиме через магнитный пускатель, только в автоматическом режиме, ручного режима нет.
 // Сделано запоминание состояния автоматического режима и установок температуры и настроек при выключении питания
 // Если включен автоматический режим, то ручной выключен. Схема ручного управления полностью шунтирована.
-// Добвален wathdog. Пришлось прошить бутлоадер от UNO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// Дооавить: запрет работы при срабатывании теплового реле.
+// Добавлен wathdog. Пришлось прошить бутлоадер от UNO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Добавить: запрет работы при срабатывании теплового реле.
 //
 // Коды символов диспреля 1602 http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/pytayus-sodat-menyu#comment-531165
 
@@ -24,7 +24,7 @@
 
 #include <Arduino.h>
 #include <LCD_1602_RUS.h>
-LCD_1602_RUS lcd(0x27, 16, 2); // 27 //3F
+LCD_1602_RUS lcd(0x3F, 16, 2); // 0x27 // 0x3F
 
 #include <GyverEncoder.h>
 Encoder enc1(CLK, DT, SW, TYPE2);
@@ -41,7 +41,7 @@ unsigned int amountParentMenu = 2, countChoseParentMenu = 0, countChoseLineMenu 
 unsigned int menuIdParent, menuIdChild;
 float tempNeed = 30, getTemp, hysteresis = 4;
 String arrow = "\xB7E";
-unsigned int timeWorkHours = 10, timePauseHours = 10;
+unsigned int timeWorkHours = 1, timePauseHours = 1;
 unsigned long timerOxigen, timerRequestTemp, timerRedraw;
 int addresstempNeed = 15, // разносим адреса через десятки, а то глючит.
     addressHysteresis = 25,
@@ -76,18 +76,18 @@ void setup()
   delay(10);
   wdt_enable(WDTO_500MS);
   // === Первоначальная запись в ячейку памяти, т.к. в новых записано значение 255
-    // EEPROM.put(addressFlagAuto, (bool)0);
-    // delay(10);
-    // EEPROM.put(addressFlagOxygen, (bool)0);
-    // delay(10);
-    // EEPROM.put(addresstempNeed, (bool)1);
-    // delay(10);
-    // EEPROM.put(addressHysteresis, (bool)1);
-    // delay(10);
-    // EEPROM.put(addressTimeWorkHours, (bool)1);
-    // delay(10);
-    // EEPROM.put(addressTimePauseHours, (bool)1);
-    // delay(10);
+  // EEPROM.put(addressFlagAuto, (bool)0);
+  // delay(10);
+  // EEPROM.put(addressFlagOxygen, (bool)0);
+  // delay(10);
+  // EEPROM.put(addresstempNeed, (bool)1);
+  // delay(10);
+  // EEPROM.put(addressHysteresis, (bool)1);
+  // delay(10);
+  // EEPROM.put(addressTimeWorkHours, (bool)1);
+  // delay(10);
+  // EEPROM.put(addressTimePauseHours, (bool)1);
+  // delay(10);
   // == Отладка
   // Serial.begin(9600); // инициализируем порт, скорость 9600
 }
@@ -269,32 +269,34 @@ void writeKM1_AUTO_PIN() // Для релейного регулирования
   getTemp = sensor1.getTemp(); // сообщаем регулятору текущую температуру
   if (flagAuto == 1)
   {
-      
-      if ((getTemp < (tempNeed - hysteresis / 2)) && flagWorkKM1 == 0 )// && flagWorkKM1 == 0
-      {
-        flagWorkKM1 = 1;
-        digitalWrite(KM1NC_AUTO_PIN, LOW);
-        digitalWrite(KM1NO_AUTO_PIN, HIGH); // На замыкание контактов. Если низкая температура то греем.
-      }
 
-      if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1 ) // && flagWorkKM1 == 1
-      {
-        flagWorkKM1 = 0;
-        digitalWrite(KM1NO_AUTO_PIN, LOW);
-        digitalWrite(KM1NC_AUTO_PIN, HIGH); // На размыкание контактов, если высокая температура.
-      }
-      if (flagHL_AUTO == 0){
-        digitalWrite(HL_AUTO_PIN, HIGH);
-        flagHL_AUTO = 1;
-      }
+    if ((getTemp < (tempNeed - hysteresis / 2)) && flagWorkKM1 == 0) // && flagWorkKM1 == 0
+    {
+      flagWorkKM1 = 1;
+      digitalWrite(KM1NC_AUTO_PIN, LOW);
+      digitalWrite(KM1NO_AUTO_PIN, HIGH); // На замыкание контактов. Если низкая температура то греем.
+    }
+
+    if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1) // && flagWorkKM1 == 1
+    {
+      flagWorkKM1 = 0;
+      digitalWrite(KM1NO_AUTO_PIN, LOW);
+      digitalWrite(KM1NC_AUTO_PIN, HIGH); // На размыкание контактов, если высокая температура.
+    }
+    if (flagHL_AUTO == 0)
+    {
+      digitalWrite(HL_AUTO_PIN, HIGH);
+      flagHL_AUTO = 1;
+    }
   }
   if (flagAuto == 0)
   {
-    if (flagHL_AUTO == 1){
+    if (flagHL_AUTO == 1)
+    {
       flagHL_AUTO = 0;
-    digitalWrite(HL_AUTO_PIN, LOW);
-    digitalWrite(KM1NO_AUTO_PIN, LOW);
-    digitalWrite(KM1NC_AUTO_PIN, LOW);
+      digitalWrite(HL_AUTO_PIN, LOW);
+      digitalWrite(KM1NO_AUTO_PIN, LOW);
+      digitalWrite(KM1NC_AUTO_PIN, LOW);
     }
   }
 }
@@ -303,30 +305,43 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
 {
   if (flagAuto == 1 && flagOxygen == 1)
   {
-    if ((millis() - timerOxigen >= timePauseHours * 60 * 60 * 1000) && flagTimerVentWork == 0) 
-    // 60*60*1000 !!!! 0.1 * 10 * 10 * 10
+    if ((millis() - timerOxigen >= timePauseHours * 1000) && flagTimerVentWork == 0)
+    // 60*60*1000 !!!!
     {
       flagTimerVentWork = 1;
       timerOxigen = millis();             // сброс таймера
       digitalWrite(KM2NO_VENT_PIN, HIGH); // На замыкание котактов. Если низкая то греем.
     }
-    if ((millis() - timerOxigen >= timeWorkHours * 60 * 60 * 1000) && flagTimerVentWork == 1) 
-    // 60*60*1000 !!!! 0.1 * 10 * 10 * 10
+    if ((millis() - timerOxigen >= timeWorkHours * 1000) && flagTimerVentWork == 1)
+    // 60*60*1000 !!!!
     {
       flagTimerVentWork = 0;
       timerOxigen = millis(); // сброс таймера
       digitalWrite(KM2NO_VENT_PIN, LOW);
     }
-    if (flagHL_VENT == 0) {
+    if (flagHL_VENT == 0)
+    {
       flagHL_VENT = 1;
-    digitalWrite(HL_VENT_PIN, HIGH);
+      digitalWrite(HL_VENT_PIN, HIGH);
     }
   }
-  if (flagAuto == 0) 
+  if (flagAuto == 1 && flagOxygen == 0)
   {
-    if (flagHL_VENT == 1) {
-    digitalWrite(KM2NO_VENT_PIN, LOW);
-    digitalWrite(HL_VENT_PIN, LOW);
+    if (flagHL_VENT == 1)
+    {
+      flagHL_VENT = 0;
+      digitalWrite(HL_VENT_PIN, LOW);
+      digitalWrite(KM2NO_VENT_PIN, LOW);
+    }
+  }
+
+  if (flagAuto == 0)
+  {
+    if (flagHL_VENT == 1)
+    {
+      flagHL_VENT = 0;
+      digitalWrite(KM2NO_VENT_PIN, LOW);
+      digitalWrite(HL_VENT_PIN, LOW);
     }
   }
 }
@@ -435,7 +450,7 @@ void childMenuEnc()
     }
     else if (menuIdChild == 1 && countChoseLineMenu == 1)
     {
-      timePauseHours++;
+      timeWorkHours--;
     }
   }
 
