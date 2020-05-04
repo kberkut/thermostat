@@ -45,7 +45,8 @@ unsigned int menuIdParent, menuIdChild;
 float tempNeed = 30, getTemp, hysteresis = 4;
 String arrow = "\xB7E";
 int timeWorkHours = 1, timePauseHours = 1;
-unsigned long timerOxigen, timerRequestTemp, timerRedraw;
+unsigned long timerOxigen, timerRequestTemp, timerRedraw, 
+              kHours = 3600; // переводной коэффициент. Переводим в часы.
 int addresstempNeed = 15, // разносим адреса через десятки, а то глючит.
     addressHysteresis = 25,
     addressTimeWorkHours = 35,
@@ -64,6 +65,12 @@ void setup()
   pinMode(KM1NC_AUTO_PIN, OUTPUT);
   pinMode(KM2NO_VENT_PIN, OUTPUT);
   pinMode(HL_VENT_PIN, OUTPUT);
+  digitalWrite(KM1NO_AUTO_PIN, RELAY_OFF);
+  delay(10);
+  digitalWrite(KM1NC_AUTO_PIN, RELAY_OFF);
+  delay(10);
+  digitalWrite(KM2NO_VENT_PIN, RELAY_OFF);
+  delay(10);
   sensor1.setResolution(9);
   EEPROM.get(addressFlagAuto, flagAuto);
   delay(10);
@@ -280,7 +287,7 @@ void writeKM1_AUTO_PIN() // Для релейного регулирования
       digitalWrite(KM1NO_AUTO_PIN, RELAY_ON);  // Управление по низкому уровню. Включить при выполнении условия.
     }
 
-    if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1)
+    if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1) // Если восстановление питания произошло при тепературе выше установленной, то условие не выполнится.
     {
       flagWorkKM1 = 0;
       digitalWrite(KM1NO_AUTO_PIN, RELAY_OFF);
@@ -309,14 +316,14 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
 {
   if (flagAuto == 1 && flagOxygen == 1)
   {
-    if ((millis() - timerOxigen >= timePauseHours * 60 * 60 * 1000) && flagTimerVentWork == 0)
+    if ((millis() - timerOxigen >= timePauseHours * kHours * 1000) && flagTimerVentWork == 0)
     // 60 * 60 * 1000 !!!!
     {
       flagTimerVentWork = 1;
       timerOxigen = millis();                 // сброс таймера
       digitalWrite(KM2NO_VENT_PIN, RELAY_ON); // На замыкание котактов. Если низкая то греем.
     }
-    if ((millis() - timerOxigen >= timeWorkHours * 60 * 60 * 1000) && flagTimerVentWork == 1)
+    if ((millis() - timerOxigen >= timeWorkHours * kHours * 1000) && flagTimerVentWork == 1)
     // 60 * 60 * 1000 !!!!
     {
       flagTimerVentWork = 0;
