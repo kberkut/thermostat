@@ -8,6 +8,7 @@
 // Сделано запоминание состояния автоматического режима и установок температуры и настроек при выключении питания
 // Если включен автоматический режим, то ручной выключен. Схема ручного управления полностью шунтирована.
 // Добавлен wathdog. Пришлось прошить бутлоадер от UNO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// Релейные модули arduino включаются включаются низким уровнем !!!
 // Добавить: запрет работы при срабатывании теплового реле.
 //
 // Коды символов диспреля 1602 http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/pytayus-sodat-menyu#comment-531165
@@ -273,15 +274,15 @@ void writeKM1_AUTO_PIN() // Для релейного регулирования
     if ((getTemp < (tempNeed - hysteresis / 2)) && flagWorkKM1 == 0) // && flagWorkKM1 == 0
     {
       flagWorkKM1 = 1;
-      digitalWrite(KM1NC_AUTO_PIN, LOW);
-      digitalWrite(KM1NO_AUTO_PIN, HIGH); // На замыкание контактов. Если низкая температура то греем.
+      digitalWrite(KM1NC_AUTO_PIN, HIGH);
+      digitalWrite(KM1NO_AUTO_PIN, LOW); // На замыкание контактов. Если низкая температура то греем.
     }
 
     if ((getTemp > (tempNeed + hysteresis / 2)) && flagWorkKM1 == 1) // && flagWorkKM1 == 1
     {
       flagWorkKM1 = 0;
-      digitalWrite(KM1NO_AUTO_PIN, LOW);
-      digitalWrite(KM1NC_AUTO_PIN, HIGH); // На размыкание контактов, если высокая температура.
+      digitalWrite(KM1NO_AUTO_PIN, HIGH);
+      digitalWrite(KM1NC_AUTO_PIN, LOW); // На размыкание контактов, если высокая температура.
     }
     if (flagHL_AUTO == 0)
     {
@@ -293,10 +294,10 @@ void writeKM1_AUTO_PIN() // Для релейного регулирования
   {
     if (flagHL_AUTO == 1)
     {
-      flagHL_AUTO = 0;
+      flagHL_AUTO = 0; flagWorkKM1 = 0;
       digitalWrite(HL_AUTO_PIN, LOW);
-      digitalWrite(KM1NO_AUTO_PIN, LOW);
-      digitalWrite(KM1NC_AUTO_PIN, LOW);
+      digitalWrite(KM1NO_AUTO_PIN, HIGH);
+      digitalWrite(KM1NC_AUTO_PIN, HIGH);
     }
   }
 }
@@ -310,14 +311,14 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
     {
       flagTimerVentWork = 1;
       timerOxigen = millis();             // сброс таймера
-      digitalWrite(KM2NO_VENT_PIN, HIGH); // На замыкание котактов. Если низкая то греем.
+      digitalWrite(KM2NO_VENT_PIN, LOW); // На замыкание котактов. Если низкая то греем.
     }
     if ((millis() - timerOxigen >= timeWorkHours * 1000) && flagTimerVentWork == 1)
     // 60*60*1000 !!!!
     {
       flagTimerVentWork = 0;
       timerOxigen = millis(); // сброс таймера
-      digitalWrite(KM2NO_VENT_PIN, LOW);
+      digitalWrite(KM2NO_VENT_PIN, HIGH);
     }
     if (flagHL_VENT == 0)
     {
@@ -331,7 +332,7 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
     {
       flagHL_VENT = 0;
       digitalWrite(HL_VENT_PIN, LOW);
-      digitalWrite(KM2NO_VENT_PIN, LOW);
+      digitalWrite(KM2NO_VENT_PIN, HIGH);
     }
   }
 
@@ -340,7 +341,7 @@ void writeKM2NO_VENT_PIN() // Включаем либо выключаем по�
     if (flagHL_VENT == 1)
     {
       flagHL_VENT = 0;
-      digitalWrite(KM2NO_VENT_PIN, LOW);
+      digitalWrite(KM2NO_VENT_PIN, HIGH);
       digitalWrite(HL_VENT_PIN, LOW);
     }
   }
